@@ -19,3 +19,10 @@ x = [0.268, 0.905, 0.643, 0.180, 0.371, 0.448, 0.709, 0.803, 0.261, 0.733,
 plt.style.use('ggplot')
 plt.hist(x, bins = 10)
 plt.show()    
+
+# One by one, I generated 100 random numbers using my calculator (shift + .) for the default range (0, 1) and precision (3 decimal places). 
+# For the histogram plot, I selected the number of bins (or groups of division) to be 10 so as to see the frequency or pattern (if any) 
+# of numbers grouped on the tenths place (first number to the right of the decimal point) i.e. the ranges (0.0 to 0.1), (0.1 to 0.2)…(0.9 to 1.0). 
+# As evident from the plot above, there is, but very little difference between the frequency of numbers in each such range. 
+# No range has a large enough distinguishing factor (like the mean/mode in a normal distribution) and the shape clearly doesn’t resemble a bell-shape either, 
+# so I can safely say it is an uniform distribution, as visually discernible. (each number has equal probability of occurence)
