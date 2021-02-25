@@ -21,3 +21,16 @@ def bisection(a, b, threshold):
         else: 
             a = c 
     print("The value of the estimated root upto 5 decimal places is: ","%.5f"%c) 
+
+# Examples:
+# Consider the function 2(x^3) - 2(x^2) - 5
+def func(x):
+  return 2 * (x ** 3) - 2 * (x ** 2) - 5
+# Call my function with suitable parameters to estimate the roots of the aforementioned equation:
+bisection(a = -300, b = 300, threshold = 0.00001) # 1.78480
+
+# Consider the function x^2 - x - 20 
+# The root will be 5, since the equation factors out to be (x - 5)(x + 4)
+def func(y):
+  return y * y - y - 20
+bisection(a = 2, b = 9, threshold = 0.01) # 5.00
