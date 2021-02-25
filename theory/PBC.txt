@@ -1,0 +1,9 @@
+Periodic boundary condition(s) are a set of boundary conditions (applying to boundary based interactions and restrictions) which are often chosen for approximating a large (infinite) system by using a small part called a ‘unit cell’.
+
+These conditions are used to avoid problems with boundary effects caused by finite size (of molecules and the box enclosing them) and they make the system more like an infinite one, at the cost of possible periodicity effects.
+
+For example: In a two-dimensional unit cell (geometry of the unit cell satisfies perfect two-dimensional tiling), when an object passes through one side of the unit cell, it re-appears on the opposite side with the same velocity. This is the result of a periodic boundary condition imposed so as to make the molecules consistent and the space infinitely large by not restricting the space where the molecule can move i.e. the existence of periodic boundary condition here means that any atom that leaves a simulation box by, say, the right-hand face, would then enter the simulation box again by the left-hand face.
+
+The large systems approximated by such periodic boundary conditions consist of an infinite number of unit cells. In computer simulations, one of these is the original simulation box, and others are copies called ‘images’. During the simulation, only the properties of the original simulation box need to be recorded and propagated. The ‘minimum-image convention’ is a common form of periodic boundary condition particle bookkeeping in which each individual particle in the simulation interacts with the closest image of the remaining particles in the system.
+
+In molecular dynamics simulations, periodic boundary conditions are usually applied to specifically calculate the properties of bulk gasses, liquids, crystals or even mixtures.
